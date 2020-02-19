@@ -1,0 +1,177 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.link {
+  color: #FFF;
+}
+.link:hover {
+   color: #FFD;
+}
+
+#overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#content-overlay{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+#box-red-1 {
+	width:100%;
+	height:fit-content;
+	margin:10px;
+  padding:10px;
+	background: #c00;
+	border-radius: 25px;
+}
+
+#box-red-2 {
+	width:100%;
+	height:500px;
+	margin:10px;
+  padding:10px;
+	background: #c00;
+	border-radius: 25px;
+}
+
+#box-purple {
+	width:90%;
+	height:fit-content;
+	background: purple;
+	border-radius: 10px;
+}
+
+html, body {
+  height:100%;
+} 
+
+.custon-padding-top-5 {
+  padding-top: 5%;
+}
+
+.custon-padding-top-15 {
+  padding-top: 15%;
+}
+
+.padding-top-10 {
+  padding-top: 10px;
+}
+
+.padding-top-20 {
+  padding-top: 10px;
+}
+
+.padding-bottom-10 {
+  padding-bottom: 10px;
+}
+
+.padding-bottom-20 {
+  padding-bottom: 20px;
+}
+
+.introduction-background {
+  background-image: url("Assets/bg1.png");
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.instruction-background {
+  background-image: url("Assets/bg2.png");
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.game-background {
+  background-image: url("Assets/bg3.png");
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.result-background {
+  background-image: url("Assets/bg4.png");
+  position: fixed;
+  width: 150%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.img-indicator {
+  content:url("Assets/arte_indicadores.png");
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-color-purple {
+  color: purple;
+}
+
+.text-color-red {
+  color: red;
+}
+
+.text-color-white {
+  color: white;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
