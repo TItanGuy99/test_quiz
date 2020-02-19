@@ -76,11 +76,21 @@
 	border-radius: 25px;
 }
 
+#box-white {
+	width:100%;
+	height:500px;
+	margin:10px;
+  padding:10px;
+	background: white;
+	border-radius: 25px;
+}
+
 #box-purple {
 	width:90%;
 	height:fit-content;
-	background: purple;
-	border-radius: 10px;
+  background: linear-gradient(45deg, #1a0724 0%, #ff89e3 100%);
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 html, body {
@@ -165,6 +175,10 @@ html, body {
 
 .text-color-white {
   color: white;
+}
+
+.text-color-black {
+  color: black;
 }
 
 @keyframes App-logo-spin {

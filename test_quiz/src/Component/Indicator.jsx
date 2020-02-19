@@ -13,9 +13,9 @@ class Indicator extends Component{
                             <div className="col-6">
                                 <img className="img-indicator" alt="Indicator asset"/>
                             </div>
-                            <div className="col-6 custon-padding-top-5">
-                                <p className="text-left">Satisfação do Cliente</p>
-                                <p className="text-left">Fidelização</p>
+                            <div className="col-6 custon-padding-top-5 text-left">
+                                <p>Satisfação do Cliente</p>
+                                <p>Fidelização</p>
                             </div>
                         </div>
                     </div>
