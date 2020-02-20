@@ -35,6 +35,10 @@
   font-family: 'Gilroy-Extra-Bold';
 }
 
+.text-size-22 {
+  font-size: 22px;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import '../App.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import { MDBProgress } from 'mdbreact';
 
 class Instrucao extends Component{
     render(){
@@ -21,7 +22,20 @@ class Instrucao extends Component{
                                     <div><img className="img-indicator" align="right" alt="Indicator asset"/></div>
                                 </div>
                                 <div className="row">
-                                    <div><img className="img-indicator" align="right" alt="Indicator asset"/></div>
+                                    <div>
+
+                                    <p className="text-regular text-color-white">Satisfação do Cliente: 
+                                        <MDBProgress material value="30" height="20px">
+                                            30
+                                        </MDBProgress>
+                                    </p>
+                                    <p className="text-regular text-color-white">Fidelização: 
+                                        <MDBProgress material value="10" height="20px">
+                                            10
+                                        </MDBProgress>                           
+                                    </p>    
+                                    
+                                    </div>
                                 </div>
                             </div>
                         </div>

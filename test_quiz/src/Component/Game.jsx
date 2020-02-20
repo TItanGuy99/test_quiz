@@ -31,6 +31,10 @@ class Game extends Component {
                 this.setState({ questions: res.data.banco_questoes });
                 this.setState({ questions_length: res.data.questoes_randomizar })
                 this.setState({ final_questions: this.shuffle(this.state.questions) });
+
+                this.state.final_questions.forEach(element => {
+                  console.log(element);  
+                })
             })
     }
 

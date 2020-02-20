@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import qs from 'qs';
+import { MDBProgress } from 'mdbreact';
 
 class Result extends Component {
 
@@ -32,8 +33,16 @@ class Result extends Component {
                                     </div>
                                     <div className="col-6">
                                         <h2 className="text-left custon-padding-top-5 text-extra-bold">Veja sua performance em cada indicador:</h2>
-                                        <p className="text-left text-color-white text-extra-bold">Satisfação: {satisfaction}</p>
-                                        <p className="text-left text-color-white text-extra-bold">Fidelidade: {fidelity}</p>
+                                        <p className="text-regular">Satisfação do Cliente: 
+                                    <MDBProgress material value={satisfaction ? satisfaction : 0} height="20px">
+                                        {satisfaction ? satisfaction : 0}
+                                    </MDBProgress>
+                                </p>
+                                <p className="text-regular">Fidelização: 
+                                    <MDBProgress material value={fidelity ? fidelity : 0} height="20px">
+                                        {fidelity ? fidelity : 0}
+                                    </MDBProgress>                               
+                                </p>
                                     </div>
                                 </div>
                             </div>
