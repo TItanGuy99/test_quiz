@@ -123,7 +123,7 @@ class Game extends Component {
                                                         value={alternative.id}
                                                         checked={this.state.current_selected === alternative.id}
                                                         onChange={this.handleChange} />
-                                                    <label className="text-left text-regular" htmlFor="sizeSmall">{alternative.descricao}</label>
+                                                    <label className="text-left text-regular" htmlFor="sizeSmall">&nbsp; {alternative.descricao}</label>
                                                 </p>
                                             </div>
                                         )}
