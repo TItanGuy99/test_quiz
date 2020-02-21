@@ -24,13 +24,13 @@ class Result extends Component {
             <div>
                 <div className="result-background setsize">
                     <div id="overlay">
-                        <div className="row custom-padding-top-15">
+                        <div className="row custom-padding-top-10">
                             <div className="col-3"></div>
                             <div className="custom-padding-left-5">
-                                <div id="box-red-2" className="col-6">
+                                <div id="box-red-2" className="col-lg-8 col-md-8 col-sm-10 col-10">
                                     <div className="row">
                                         <div className="col-6">
-                                            <img className="img-indicator custom-padding-bottom-5" align="left" alt="Indicator asset" width="40%" hspace="20" />
+                                            <img className="img-indicator custom-padding-bottom-5" align="left" alt="Indicator asset" width="80%" hspace="20" />
                                         </div>
                                         <div className="col-6 custom-padding-right-5">
                                             <h2 className="text-left text-color-white text-extra-bold sub-title-font">Veja sua performance em cada indicador:</h2>

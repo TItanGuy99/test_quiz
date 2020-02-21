@@ -19,7 +19,7 @@ class Instrucao extends Component {
                     <div className="col-1"></div>
                     <div id="box-red-1" className="col-6">
                         <div className="row box-red-outline">
-                            <div className="col-5">
+                            <div className="col-lg-5 col-sm-10">
                                 <p className="text-left text-color-white text-small">Ao lado, estão os três indicadores do game. Quando você tomar suas decisões, eles poderão aumentar ou diminuir. Por isso, acompanhe-os para saber sua evolução no jogo.</p>
                                 <p className="text-left text-color-white text-small">Você iniciará o game com os indicadores zerados. No decorrer do jogo, eles serão impactados por todas as suas decisões. Então, fique atento!</p>
                                 <p className="text-left text-color-white text-small">Antes de resolver cada situação, reflita como suas escolhas podem influenciar os indicadores.</p>
@@ -28,7 +28,7 @@ class Instrucao extends Component {
                                 <div className="row">
                                     <div><img className="img-indicator custom-padding-bottom-5" align="left" alt="Indicator asset" width="70%" hspace="20" /></div>
                                 </div>
-                                <div id="box-red-4" className="row custom-size-70">
+                                <div id="box-red-4" className="row">
                                     <div className="row">
                                         <div className="col-6">
                                             <p className="text-small text-left text-color-white">Satisfação do Cliente: </p>

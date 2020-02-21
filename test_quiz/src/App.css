@@ -52,7 +52,8 @@ html {
 }
 
 .sub-title-font {
-    font-size: calc(20px + .5vw);
+    margin: 3%;
+    font-size: calc(15px + .5vw);
 }
 
 .button-font {
@@ -92,7 +93,7 @@ html {
 
 div[disabled] {
     pointer-events: none;
-    opacity: 0.7;
+    opacity: 0.9;
 }
 
 #overlay {
@@ -175,15 +176,15 @@ div[disabled] {
 }
 
 #box-red-4 {
-    width: fit-content;
+    margin-left: 3%;
+    width: 95%;
     height: fit-content;
     background: rgba(173, 86, 86, 0.767);
     border-radius: 15px;
-    padding-left: 15px;
+    padding-left: 20px;
     padding-right: 15px;
     padding-bottom: 15px;
     padding-top: 25px;
-    overflow: auto;
 }
 
 #box-white {
@@ -233,6 +234,10 @@ div[disabled] {
     padding-left: 5%;
 }
 
+.custom-padding-left-10 {
+    padding-left: 10%;
+}
+
 #indicator-fidelity .progress-bar {
     background-color: purple !important;
 }
@@ -251,6 +256,10 @@ div[disabled] {
 
 .custom-padding-top-5 {
     padding-top: 5%;
+}
+
+.custom-padding-top-10 {
+    padding-top: 10%;
 }
 
 .custom-padding-top-15 {
