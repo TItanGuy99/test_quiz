@@ -11,4 +11,5 @@ Esse projeto foi criado usando [Create React App](https://github.com/facebook/cr
 -   Abra uma janela com a seguinte URL: http://localhost:3000/
 
 ## Status
--   Em progresso.
+-   Layout ainda não está 100%
+-   Faltam animações
