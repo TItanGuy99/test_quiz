@@ -3,9 +3,9 @@ import '../App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Link } from 'react-router-dom'
 
-class Introducao extends Component{
-    render(){
-        return(
+class Introducao extends Component {
+    render() {
+        return (
             <div className="introduction-background">
                 <div className="row setsize custom-padding-top-15">
                     <div className="col-1"></div>

@@ -1,300 +1,355 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 @font-face {
-  font-family: 'Gilroy';
-  font-weight: 900;
-  font-style: normal;
-  src: url(Assets/font/gilroy/Gilroy-Regular.woff);
+    font-family: 'Gilroy';
+    font-weight: 900;
+    font-style: normal;
+    src: url(Assets/font/gilroy/Gilroy-Regular.woff);
 }
 
 @font-face {
-  font-family: 'Gilroy-Extra-Bold';
-  font-weight: 900;
-  font-style: normal;
-  src: url(Assets/font/gilroy/Gilroy-ExtraBold.woff);
+    font-family: 'Gilroy-Extra-Bold';
+    font-weight: 900;
+    font-style: normal;
+    src: url(Assets/font/gilroy/Gilroy-ExtraBold.woff);
 }
 
-body, html {
-  height: 100%;
-  min-width: 480px;
+body,
+html {
+    height: 100%;
+    min-width: 480px;
 }
 
 .text-regular {
-  font-family: 'Gilroy';
-  font-size: calc(12px + .5vw);
+    font-family: 'Gilroy';
+    font-size: calc(12px + .5vw);
 }
 
 .text-small {
-  font-family: 'Gilroy';
-  font-size: calc(10px + .5vw);
+    font-family: 'Gilroy';
+    font-size: calc(10px + .5vw);
 }
 
 .text-extra-bold {
-  font-family: 'Gilroy-Extra-Bold';
+    font-family: 'Gilroy-Extra-Bold';
 }
 
 .title-font {
-  font-size: calc(28px + .5vw);
+    font-size: calc(28px + .5vw);
 }
 
 .sub-title-font {
-  font-size: calc(20px + .5vw);
+    font-size: calc(20px + .5vw);
 }
 
 .button-font {
-  font-size: calc(15px + .5vw);
+    font-size: calc(15px + .5vw);
 }
 
 .button-font-instruction {
-  font-size: calc(10px + .5vw);
+    font-size: calc(10px + .5vw);
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 .link {
-  color: #FFF;
+    color: #FFF;
 }
+
 .link:hover {
-   color: #FFD;
+    color: #FFD;
 }
 
 .full-width {
-  width: 100%;
+    width: 100%;
 }
 
-div[disabled]
-{
-  pointer-events: none;
-  opacity: 0.7;
+div[disabled] {
+    pointer-events: none;
+    opacity: 0.7;
 }
 
 #overlay {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.5);
-  z-index: 2;
-  cursor: pointer;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    cursor: pointer;
 }
 
 #box-red-1 {
-	width:fit-content;
-	height:fit-content;
-	margin:10px;
-  padding:10px;
-	background: #c00;
-  border-radius: 25px;
+    width: fit-content;
+    height: fit-content;
+    margin: 10px;
+    padding: 10px;
+    background: #c00;
+    border-radius: 25px;
+    z-index: 0;
+}
+
+#box-red-1:after {
+    pointer-events: none;
+    content: '';
+    display: block;
+    position: absolute;
+    top: -10px;
+    bottom: -10px;
+    left: -10px;
+    right: -10px;
+    border-radius: 30px;
+    border: 2px solid #c00;
+    z-index: 1;
+}
+
+.custom-btn-position {
+    /* transform: translate(1rem, 3rem); */
+    transform: translateY(-1rem);
+    z-index: 99999;
 }
 
 #box-red-2 {
-	width:fit-content;
-  height:fit-content;
-	margin:10px;
-  padding-left: 20px;
-  padding-top: 20px;
-  padding-right: 20px;
-  padding-bottom: 90px;
-	background: #c00;
-	border-radius: 25px;
+    width: fit-content;
+    height: fit-content;
+    margin: 10px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 90px;
+    background: #c00;
+    border-radius: 25px;
+}
+
+#box-red-2:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -10px;
+    bottom: -10px;
+    left: -10px;
+    right: -10px;
+    border-radius: 30px;
+    border: 2px solid #c00;
 }
 
 #box-red-3 {
-	width:fit-content;
-	height:fit-content;
-	background: #c00;
-  border-radius: 25px;
-  padding-bottom: 0px;
+    width: fit-content;
+    height: fit-content;
+    background: #c00;
+    border-radius: 25px;
+    padding-bottom: 0px;
 }
 
 .custom-size-70 {
-  width: 70%;
+    width: 70%;
 }
 
 #box-red-4 {
-	width:fit-content;
-	height:fit-content;
-	background: rgba(173, 86, 86, 0.767);
-  border-radius: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 15px;
-  padding-top: 25px;
+    width: fit-content;
+    height: fit-content;
+    background: rgba(173, 86, 86, 0.767);
+    border-radius: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-top: 25px;
+    overflow: auto;
 }
 
 #box-white {
-  width:100%;
-  height:fit-content;
-  margin:100px;
-  padding-left: 50px;
-  padding-right: 300px;
-  padding-bottom: 10px;
+    width: 100%;
+    height: fit-content;
+    margin: 100px;
+    padding-left: 50px;
+    padding-right: 300px;
+    padding-bottom: 10px;
+    background: white;
+    border-radius: 25px;
+    z-index: 0;
+}
 
-	background: white;
-	border-radius: 25px;
+#box-white:after {
+    pointer-events: none;
+    content: '';
+    display: block;
+    position: absolute;
+    top: -10px;
+    bottom: -10px;
+    left: -10px;
+    right: -10px;
+    border-radius: 30px;
+    border: 2px solid white;
+    z-index: 1;
+}
+
+.custom-btn-position-2 {
+    /* transform: translate(1rem, 3rem); */
+    transform: translateY(-6.5rem);
+    z-index: 99999;
 }
 
 #box-purple {
-  width:100%;
-  min-width: 100px;
-  height:fit-content;
-  padding-top: 2px;
-  padding-left: 3%;
-  background: linear-gradient(45deg, #1a0724 0%, #ff89e3 100%);
-  border-radius: 10px;
-  cursor: pointer;
+    width: 100%;
+    min-width: 100px;
+    height: fit-content;
+    padding-top: 2px;
+    padding-left: 3%;
+    background: linear-gradient(45deg, rgb(211, 55, 55) 0%, #860468 100%);
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .custom-padding-left-5 {
-  padding-left: 5%;
+    padding-left: 5%;
 }
 
 #indicator-fidelity .progress-bar {
-  background-color: purple !important;
+    background-color: purple !important;
 }
 
 #instrucao-fidelity .progress-bar {
-  background-color: purple !important;
+    background-color: purple !important;
 }
 
 #result-fidelity .progress-bar {
-  background-color: purple !important;
+    background-color: purple !important;
 }
 
 .custom-padding-right-5 {
-  padding-right: 5px;
+    padding-right: 5px;
 }
+
 .custom-padding-top-5 {
-  padding-top: 5%;
+    padding-top: 5%;
 }
 
 .custom-padding-top-15 {
-  padding-top: 15%;
+    padding-top: 15%;
 }
 
 .custom-padding-top-2 {
-  padding-top: 2%;
+    padding-top: 2%;
 }
 
-
 .custom-padding-bottom-5 {
-  padding-bottom: 5%;
+    padding-bottom: 5%;
 }
 
 .padding-top-10 {
-  padding-top: 10px;
+    padding-top: 10px;
 }
 
 .padding-top-20 {
-  padding-top: 10px;
+    padding-top: 10px;
 }
 
 .padding-bottom-10 {
-  padding-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 .padding-bottom-20 {
-  padding-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 .introduction-background {
-  background-image: url("Assets/bg1.png");
-  height: 100%; 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-image: url("Assets/bg1.png");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .setsize {
-  min-height: 800px;
+    min-height: 800px;
 }
 
 .instruction-background {
-  background-image: url("Assets/bg2.png");
-  height: 100%; 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-image: url("Assets/bg2.png");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .game-background {
-  background-image: url("Assets/bg3.png");
-  height: 100%; 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-image: url("Assets/bg3.png");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .result-background {
-  background-image: url("Assets/bg4.png");
-  height: 100%; 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-image: url("Assets/bg4.png");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .img-indicator {
-  content:url("Assets/arte_indicadores.png");
+    content: url("Assets/arte_indicadores.png");
 }
 
 .text-left {
-  text-align: left;
+    text-align: left;
 }
 
 .text-color-purple {
-  color: purple;
+    color: purple;
 }
 
 .text-color-red {
-  color: red;
+    color: red;
 }
 
 .text-color-white {
-  color: white;
+    color: white;
 }
 
 .text-color-black {
-  color: black;
+    color: black;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }

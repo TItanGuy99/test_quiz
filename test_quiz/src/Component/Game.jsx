@@ -33,7 +33,7 @@ class Game extends Component {
                 this.setState({ final_questions: this.shuffle(this.state.questions) });
 
                 this.state.final_questions.forEach(element => {
-                  console.log(element);  
+                    console.log(element);
                 })
             })
     }
@@ -70,7 +70,7 @@ class Game extends Component {
         let get_fidelity;
 
         this.state.final_questions[this.state.current_question].alternativas.forEach(element => {
-            if(element.id === this.state.current_selected) {
+            if (element.id === this.state.current_selected) {
                 get_satisfaction = element.impacto_indicadores.satisfacao;
                 get_fidelity = element.impacto_indicadores.fidelizacao;
             }
@@ -83,10 +83,10 @@ class Game extends Component {
         this.setState({ current_selected: '' });
         this.setState({ disabled: true });
 
-        if(this.state.current_question === this.state.questions_length-1) {
-            this.props.history.push('/Result?indicators=' + 
-            this.state.satisfaction + '?' + 
-            this.state.fidelity);
+        if (this.state.current_question === this.state.questions_length - 1) {
+            this.props.history.push('/Result?indicators=' +
+                this.state.satisfaction + '?' +
+                this.state.fidelity);
         }
     }
 
@@ -96,50 +96,55 @@ class Game extends Component {
 
         if (show_question) {
             let show_alternatives = show_question.alternativas;
-                return (
-                    <div className="game-background setsize">
-                        <div className="row">
-                            <div className="col-5"></div>
-                            <div className="col-6 custom-padding-top-2">
+            return (
+                <div className="game-background setsize">
+                    <div className="row">
+                        <div className="col-5"></div>
+                        <div className="col-6 custom-padding-top-2">
                             <Indicator satisfaction={this.state.satisfaction} fidelity={this.state.fidelity} />
-                            </div>
-                        </div>
-
-                        <div className="row">
-                            <div className="col-2"></div>
-                            <div id="box-white" className="col-6">
-                                <div className="row text-color-black text-left">
-                                    <div>
-                                        <form className="custom-padding-top-15">
-
-                                            <p className="text-left text-regular"> {show_question.pergunta} </p>
-
-                                            {show_alternatives.map((alternative) =>
-                                                <div>
-                                                    <p>
-                                                        <input type="radio"
-                                                            name="radio-group"
-                                                            id={alternative.id}
-                                                            value={alternative.id}
-                                                            checked = {this.state.current_selected === alternative.id}
-                                                            onChange = {this.handleChange} />
-                                                        <label className="text-left text-regular" htmlFor="sizeSmall">{alternative.descricao}</label>
-                                                    </p>
-                                                </div>
-                                            )}
-
-                                            <div id="box-purple" disabled={this.state.disabled}>
-                                                <h3 onClick={this.nextMethod} className="text-left text-color-white text-extra-bold button-font">Confirmar</h3>
-                                            </div>
-
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-4"></div>
                         </div>
                     </div>
-                );
+
+                    <div className="row">
+                        <div className="col-2"></div>
+                        <div id="box-white" className="col-6">
+                            <div className="row text-color-black text-left">
+                                <div>
+                                    <form className="custom-padding-top-15">
+
+                                        <p className="text-left text-regular"> {show_question.pergunta} </p>
+
+                                        {show_alternatives.map((alternative) =>
+                                            <div>
+                                                <p>
+                                                    <input type="radio"
+                                                        name="radio-group"
+                                                        id={alternative.id}
+                                                        value={alternative.id}
+                                                        checked={this.state.current_selected === alternative.id}
+                                                        onChange={this.handleChange} />
+                                                    <label className="text-left text-regular" htmlFor="sizeSmall">{alternative.descricao}</label>
+                                                </p>
+                                            </div>
+                                        )}
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-4"></div>
+                    </div>
+
+                    <div className="row custom-btn-position-2">
+                        <div className="col-5"></div>
+                        <div className="col-2">
+                            <div id="box-purple" disabled={this.state.disabled}>
+                                <h3 onClick={this.nextMethod} className="text-color-white text-extra-bold button-font">Confirmar</h3>
+                            </div>
+                        </div>
+                        <div className="col-5"></div>
+                    </div>
+                </div>
+            );
         }
         else {
             return (

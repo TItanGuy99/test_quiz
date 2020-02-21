@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 import { MDBProgress } from 'mdbreact';
 import Indicator from './Indicator';
 
-class Instrucao extends Component{
-    render(){
-        return(
+class Instrucao extends Component {
+    render() {
+        return (
             <div className="instruction-background">
                 <div className="row">
                     <div className="col-5"></div>
@@ -15,7 +15,7 @@ class Instrucao extends Component{
                         <Indicator satisfaction="10" fidelity="10" />
                     </div>
                 </div>
-                <div className="row setsize">
+                <div className="row ">
                     <div className="col-1"></div>
                     <div id="box-red-1" className="col-6">
                         <div className="row box-red-outline">
@@ -26,7 +26,7 @@ class Instrucao extends Component{
                             </div>
                             <div className="col-lg-6 col-sm-10">
                                 <div className="row">
-                                    <div><img className="img-indicator custom-padding-bottom-5" align="left" alt="Indicator asset" width="70%" hspace="20"/></div>
+                                    <div><img className="img-indicator custom-padding-bottom-5" align="left" alt="Indicator asset" width="70%" hspace="20" /></div>
                                 </div>
                                 <div id="box-red-4" className="row custom-size-70">
                                     <div className="row">
@@ -34,7 +34,7 @@ class Instrucao extends Component{
                                             <p className="text-small text-left text-color-white">Satisfação do Cliente: </p>
                                         </div>
                                         <div className="col-6">
-                                            <MDBProgress material value="20" height="20px"/>
+                                            <MDBProgress material value="20" height="20px" />
                                         </div>
                                     </div>
                                     <div className="row">
@@ -42,23 +42,23 @@ class Instrucao extends Component{
                                             <p className="text-small text-left text-color-white">Fidelização:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </p>
                                         </div>
                                         <div className="col-6">
-                                            <MDBProgress id="instrucao-fidelity" material value="20" height="20px"/>
+                                            <MDBProgress id="instrucao-fidelity" material value="20" height="20px" />
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="row">
-                            <div className="col-4"></div>
-                            <div className="col-4">
-                                <div id="box-purple">
-                                    <h4 className="text-left text-color-white text-extra-bold button-font-instruction"><Link className="nav-link link" to="/Game">Continuar</Link></h4>
-                                </div>
-                            </div>
-                            <div className="col-4"></div>
-                    </div>
                     </div>
                     <div className="col-4"></div>
+                </div>
+                <div className="row custom-btn-position">
+                    <div className="col-3"></div>
+                    <div className="col-2">
+                        <div id="box-purple">
+                            <h4 className="text-color-white text-extra-bold button-font-instruction"><Link className="nav-link link" to="/Game">Continuar</Link></h4>
+                        </div>
+                    </div>
+                    <div className="col-8"></div>
                 </div>
             </div>
         );
