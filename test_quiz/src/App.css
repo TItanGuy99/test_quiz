@@ -362,3 +362,50 @@ div[disabled] {
         transform: rotate(360deg);
     }
 }
+
+input[type="radio"] {
+    opacity: 10;
+    transition: all 0.5s ease;
+    position: absolute;
+    opacity: 0;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+  }
+  
+  label {
+    margin-bottom: 20px;
+  }
+  
+  input[type="radio"] + label::before {
+    outline: 1px solid #aa88ff;
+    color: #aa88ff;
+    background: #ffffff;
+    content: " ";
+    padding: 5px;
+    display: inline-block;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+  input[type="radio"]:checked + label::before {
+    outline: 1px solid #ffffff;
+    background: #aa88ff;
+    color: #ffffff;
+    padding: 5px;
+    display: inline-block;
+    opacity: 1;
+  }
+  
+  input[id*="A1"] + label::before {
+    content: "A";
+  }
+  input[id*="A2"] + label::before {
+    content: "B";
+  }
+  input[id*="A3"]  + label::before {
+    content: "C";
+  }
+  input[id*="A4"]  + label::before {
+    content: "D";
+  }
+  
