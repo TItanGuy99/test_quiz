@@ -3,53 +3,62 @@ import '../App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Link } from 'react-router-dom';
 import { MDBProgress } from 'mdbreact';
+import Indicator from './Indicator';
 
 class Instrucao extends Component{
     render(){
         return(
             <div className="instruction-background">
-                <div className="row custon-padding-top-15">
+                <div className="row">
+                    <div className="col-5"></div>
+                    <div className="col-6 custom-padding-top-2">
+                        <Indicator satisfaction="10" fidelity="10" />
+                    </div>
+                </div>
+                <div className="row setsize">
                     <div className="col-1"></div>
                     <div id="box-red-1" className="col-6">
-                        <div className="row">
-                            <div className="col-6">
-                                <p className="text-left text-color-white text-regular">Ao lado, estão os três indicadores do game. Quando você tomar suas decisões, eles poderão aumentar ou diminuir. Por isso, acompanhe-os para saber sua evolução no jogo.</p>
-                                <p className="text-left text-color-white text-regular">Você iniciará o game com os indicadores zerados. No decorrer do jogo, eles serão impactados por todas as suas decisões. Então, fique atento!</p>
-                                <p className="text-left text-color-white text-regular">Antes de resolver cada situação, reflita como suas escolhas podem influenciar os indicadores.</p>
+                        <div className="row box-red-outline">
+                            <div className="col-5">
+                                <p className="text-left text-color-white text-small">Ao lado, estão os três indicadores do game. Quando você tomar suas decisões, eles poderão aumentar ou diminuir. Por isso, acompanhe-os para saber sua evolução no jogo.</p>
+                                <p className="text-left text-color-white text-small">Você iniciará o game com os indicadores zerados. No decorrer do jogo, eles serão impactados por todas as suas decisões. Então, fique atento!</p>
+                                <p className="text-left text-color-white text-small">Antes de resolver cada situação, reflita como suas escolhas podem influenciar os indicadores.</p>
                             </div>
-                            <div className="col-6">
+                            <div className="col-lg-6 col-sm-10">
                                 <div className="row">
-                                    <div><img className="img-indicator" align="right" alt="Indicator asset"/></div>
+                                    <div><img className="img-indicator custom-padding-bottom-5" align="left" alt="Indicator asset" width="70%" hspace="20"/></div>
                                 </div>
-                                <div className="row">
-                                    <div>
-
-                                    <p className="text-regular text-color-white">Satisfação do Cliente: 
-                                        <MDBProgress material value="30" height="20px">
-                                            30
-                                        </MDBProgress>
-                                    </p>
-                                    <p className="text-regular text-color-white">Fidelização: 
-                                        <MDBProgress material value="10" height="20px">
-                                            10
-                                        </MDBProgress>                           
-                                    </p>    
-                                    
+                                <div id="box-red-4" className="row custom-size-70">
+                                    <div className="row">
+                                        <div className="col-6">
+                                            <p className="text-small text-left text-color-white">Satisfação do Cliente: </p>
+                                        </div>
+                                        <div className="col-6">
+                                            <MDBProgress material value="20" height="20px"/>
+                                        </div>
+                                    </div>
+                                    <div className="row">
+                                        <div className="col-6">
+                                            <p className="text-small text-left text-color-white">Fidelização:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </p>
+                                        </div>
+                                        <div className="col-6">
+                                            <MDBProgress id="instrucao-fidelity" material value="20" height="20px"/>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div className="row">
+                            <div className="col-4"></div>
+                            <div className="col-4">
+                                <div id="box-purple">
+                                    <h4 className="text-left text-color-white text-extra-bold button-font-instruction"><Link className="nav-link link" to="/Game">Continuar</Link></h4>
+                                </div>
+                            </div>
+                            <div className="col-4"></div>
                     </div>
-                    <div className="col-5"></div>
-                </div>
-                <div className="row">
-                    <div className="col-2"></div>
-                    <div className="col-2">
-                        <div id="box-purple">
-                            <h4 className="text-left text-color-white text-extra-bold"><Link className="nav-link link" to="/Game">Continuar</Link></h4>
-                        </div>
                     </div>
-                    <div className="col-8"></div>
+                    <div className="col-4"></div>
                 </div>
             </div>
         );

@@ -20,30 +20,29 @@ class Indicator extends Component{
         const { props } = this;
 
         return(
-            <div>
-                <div className="row">
-                    <div className="col-8"></div>
-                    <div className="col-4">
                         <div className="row">
                             <div className="col-6">
-                                <img className="img-indicator" alt="Indicator asset"/>
+                            <img className="img-indicator" align="right" alt="Indicator asset" width="40%" hspace="20"/>
                             </div>
-                            <div className="col-6 custon-padding-top-5 text-left">
-                                <p className="text-regular">Satisfação do Cliente: 
-                                    <MDBProgress material value={this.props.satisfaction ? this.props.satisfaction : 0} height="20px">
-                                        {this.props.satisfaction ? this.props.satisfaction : 0}
-                                    </MDBProgress>
-                                </p>
-                                <p className="text-regular">Fidelização: 
-                                    <MDBProgress material value={this.props.fidelity ? this.props.fidelity : 0} height="20px">
-                                        {this.props.fidelity ? this.props.fidelity : 0}
-                                    </MDBProgress>                               
-                                </p>
+                            <div id="box-red-3" className="col-6 custom-padding-top-5 text-left">
+                                <div className="row">
+                                    <div className="col-6">
+                                        <p className="text-small text-left text-color-white">Satisfação do Cliente: </p>
+                                    </div>
+                                    <div className="col-6">
+                                        <MDBProgress id="indicator-satisfaction" material value={this.props.satisfaction ? this.props.satisfaction : 0} height="20px"/>
+                                    </div>
+                                </div>
+                                <div className="row">
+                                    <div className="col-6">
+                                        <p className="text-small text-left text-color-white">Fidelização:</p>
+                                    </div>
+                                    <div className="col-6">
+                                        <MDBProgress id="indicator-fidelity" material value={this.props.fidelity ? this.props.fidelity : 0} height="20px"/>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
         );
     }
 }

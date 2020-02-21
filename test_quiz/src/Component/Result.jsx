@@ -22,32 +22,43 @@ class Result extends Component {
 
         return (
             <div>
-                <div className="result-background">
+                <div className="result-background setsize">
                     <div id="overlay">
-                        <div id="content-overlay" className="row">
-                            <div className="col-1"></div>
-                            <div id="box-red-2" className="col-10">
-                                <div className="row">
-                                    <div className="col-6">
-                                        <img className="img-indicator"  align="middle" alt="Indicator asset"/>
-                                    </div>
-                                    <div className="col-6">
-                                        <h2 className="text-left custon-padding-top-5 text-extra-bold">Veja sua performance em cada indicador:</h2>
-                                        <p className="text-regular">Satisfação do Cliente: 
-                                    <MDBProgress material value={satisfaction ? satisfaction : 0} height="20px">
-                                        {satisfaction ? satisfaction : 0}
-                                    </MDBProgress>
-                                </p>
-                                <p className="text-regular">Fidelização: 
-                                    <MDBProgress material value={fidelity ? fidelity : 0} height="20px">
-                                        {fidelity ? fidelity : 0}
-                                    </MDBProgress>                               
-                                </p>
+                        <div className="row custom-padding-top-15">
+                            <div className="col-3"></div>
+                                <div className="custom-padding-left-5">
+                                    <div id="box-red-2" className="col-6">
+                                        <div className="row">
+                                            <div className="col-6">                                        
+                                                <img className="img-indicator custom-padding-bottom-5" align="left" alt="Indicator asset" width="40%" hspace="20"/>
+                                            </div>
+                                            <div className="col-6 custom-padding-right-5">
+                                                <h2 className="text-left text-color-white text-extra-bold sub-title-font">Veja sua performance em cada indicador:</h2>
+                                            </div>
+                                        </div>
+                                        <div className="row">
+                                            <div className="col-6">
+                                                <p className="text-regular text-color-white text-left">Satisfação do Cliente: </p>
+                                            </div>
+                                            <div className="col-6">
+                                                <MDBProgress material value={satisfaction ? satisfaction : 0} height="20px"/>
+                                            </div>
+                                        </div>
+                                        <div className="row">
+                                            <div className="col-6">
+                                                <p className="text-regular text-color-white text-left">Fidelização:</p>
+                                            </div>
+                                            <div className="col-6">
+                                                <MDBProgress id="result-fidelity" material value={fidelity ? fidelity : 0} height="20px" /> 
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="col-1"></div>
+                            <div className="col-3"></div>
                         </div>
+
+
+                        
                     </div>
                 </div>
             </div>

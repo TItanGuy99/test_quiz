@@ -97,15 +97,20 @@ class Game extends Component {
         if (show_question) {
             let show_alternatives = show_question.alternativas;
                 return (
-                    <div className="game-background">
-                        <Indicator satisfaction={this.state.satisfaction} fidelity={this.state.fidelity} />
+                    <div className="game-background setsize">
+                        <div className="row">
+                            <div className="col-5"></div>
+                            <div className="col-6 custom-padding-top-2">
+                            <Indicator satisfaction={this.state.satisfaction} fidelity={this.state.fidelity} />
+                            </div>
+                        </div>
 
-                        <div id="content-overlay" className="row">
-                            <div className="col-1"></div>
-                            <div id="box-white" className="col-10">
+                        <div className="row">
+                            <div className="col-2"></div>
+                            <div id="box-white" className="col-6">
                                 <div className="row text-color-black text-left">
                                     <div>
-                                        <form className="custon-padding-top-15">
+                                        <form className="custom-padding-top-15">
 
                                             <p className="text-left text-regular"> {show_question.pergunta} </p>
 
@@ -113,7 +118,7 @@ class Game extends Component {
                                                 <div>
                                                     <p>
                                                         <input type="radio"
-                                                            name="radSize"
+                                                            name="radio-group"
                                                             id={alternative.id}
                                                             value={alternative.id}
                                                             checked = {this.state.current_selected === alternative.id}
@@ -124,14 +129,14 @@ class Game extends Component {
                                             )}
 
                                             <div id="box-purple" disabled={this.state.disabled}>
-                                                <p onClick={this.nextMethod} className="link text-extra-bold"> Confirmar </p>
+                                                <h3 onClick={this.nextMethod} className="text-left text-color-white text-extra-bold button-font">Confirmar</h3>
                                             </div>
 
                                         </form>
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-1"></div>
+                            <div className="col-4"></div>
                         </div>
                     </div>
                 );
