@@ -13,3 +13,4 @@ Esse projeto foi criado usando [Create React App](https://github.com/facebook/cr
 ## Status
 -   Layout ainda não está 100%
 -   Faltam animações
+-   Testado no Chrome
