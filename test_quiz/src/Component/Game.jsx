@@ -17,7 +17,8 @@ class Game extends Component {
             satisfaction: 0,
             fidelity: 0,
             current_selected: '',
-            disabled: true
+            disabled: true,
+            form_animation: false,
         }
 
         this.nextMethod = this.nextMethod.bind(this);
@@ -40,6 +41,9 @@ class Game extends Component {
 
     // Metodo disparado quando algum radio button é selecionado
     handleChange(event) {
+        if(this.state.form_animation) {
+            this.setState({ form_animation: false }); 
+        }
         this.setState({ current_selected: event.target.value });
         this.setState({ disabled: false });
     }
@@ -66,6 +70,8 @@ class Game extends Component {
 
     // Metodo chamado quando o botão responder é clicado
     nextMethod(event) {
+        this.setState({ form_animation: true });
+
         let get_satisfaction;
         let get_fidelity;
 
@@ -109,7 +115,7 @@ class Game extends Component {
                         <div className="col-2"></div>
                         <div id="box-white" className="col-6">
                             <div className="row text-color-black text-left">
-                                <div>
+                                <div className={ this.state.form_animation ? 'elementToFadeInAndOut' : 'elementToFadeInAndOutOff' }>
                                     <form className="custom-padding-top-15">
 
                                         <p className="text-left text-regular"> {show_question.pergunta} </p>
