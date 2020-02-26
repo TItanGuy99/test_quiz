@@ -32,7 +32,7 @@ class Instrucao extends Component {
                                     <div id="box-red-4" className="row">
                                         <div className="row">
                                             <div className="col-6">
-                                                <p className="text-small text-left text-color-white">Satisfação do Cliente: </p>
+                                                <p className="text-small text-left text-color-white">Satisfação do Cliente </p>
                                             </div>
                                             <div className="col-6">
                                                 <MDBProgress material value="20" height="20px" />
@@ -40,7 +40,7 @@ class Instrucao extends Component {
                                         </div>
                                         <div className="row">
                                             <div className="col-6">
-                                                <p className="text-small text-left text-color-white">Fidelização:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+                                                <p className="text-small text-left text-color-white">Fidelização&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
                                             </div>
                                             <div className="col-6">
                                                 <MDBProgress id="instrucao-fidelity" material value="20" height="20px" />
