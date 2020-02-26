@@ -2,10 +2,10 @@
 	"questoes_randomizar": 10,
 	"banco_questoes": [{
 			"id": "Q1",
-			"pergunta": "Pergunta 1",
+			"pergunta": "Espaço para pergunta 1",
 			"alternativas": [{
 					"id": "Q1_A1",
-					"descricao": "Alternativa 1",
+					"descricao": "Alternativa 1 - Pergunta 1",
 					"impacto_indicadores": {
 						"satisfacao": 4,
 						"fidelizacao": 0
@@ -15,7 +15,7 @@
 
 				{
 					"id": "Q1_A2",
-					"descricao": "Alternativa 2",
+					"descricao": "Alternativa 2 - Pergunta 1",
 					"impacto_indicadores": {
 						"satisfacao": 3,
 						"fidelizacao": 2
@@ -23,7 +23,7 @@
 				},
 				{
 					"id": "Q1_A3",
-					"descricao": "Alternativa 3",
+					"descricao": "Alternativa 3 - Pergunta 1",
 					"impacto_indicadores": {
 						"satisfacao": 4,
 						"fidelizacao": 1
@@ -36,10 +36,10 @@
 
 		{
 			"id": "Q2",
-			"pergunta": "Pergunta 2",
+			"pergunta": "Espaço para pergunta 2",
 			"alternativas": [{
 					"id": "Q2_A1",
-					"descricao": "Alternativa 1",
+					"descricao": "Alternativa 1 - Pergunta 2",
 					"impacto_indicadores": {
 						"satisfacao": 4,
 						"fidelizacao": 0
@@ -49,7 +49,7 @@
 
 				{
 					"id": "Q2_A2",
-					"descricao": "Alternativa 2",
+					"descricao": "Alternativa 2 - Pergunta 2",
 					"impacto_indicadores": {
 						"satisfacao": 3,
 						"fidelizacao": 2
@@ -57,7 +57,7 @@
 				},
 				{
 					"id": "Q2_A3",
-					"descricao": "Alternativa 3",
+					"descricao": "Alternativa 3 - Pergunta 2",
 					"impacto_indicadores": {
 						"satisfacao": 4,
 						"fidelizacao": 1
@@ -70,10 +70,10 @@
 
 		{
 			"id": "Q3",
-			"pergunta": "Pergunta 3",
+			"pergunta": "Espaço para pergunta 3",
 			"alternativas": [{
 					"id": "Q3_A1",
-					"descricao": "Alternativa 1",
+					"descricao": "Alternativa 1 - Pergunta 3",
 					"impacto_indicadores": {
 						"satisfacao": 4,
 						"fidelizacao": 0
@@ -83,7 +83,7 @@
 
 				{
 					"id": "Q3_A2",
-					"descricao": "Alternativa 2",
+					"descricao": "Alternativa 2 - Pergunta 3",
 					"impacto_indicadores": {
 						"satisfacao": 3,
 						"fidelizacao": 2
@@ -91,7 +91,7 @@
 				},
 				{
 					"id": "Q3_A3",
-					"descricao": "Alternativa 3",
+					"descricao": "Alternativa 3 - Pergunta 3",
 					"impacto_indicadores": {
 						"satisfacao": 4,
 						"fidelizacao": 1
@@ -104,10 +104,10 @@
 
 		{
 			"id": "Q4",
-			"pergunta": "Pergunta 4",
+			"pergunta": "Espaço para pergunta 4",
 			"alternativas": [{
 					"id": "Q4_A1",
-					"descricao": "Alternativa 1",
+					"descricao": "Alternativa 1 - Pergunta 4",
 					"impacto_indicadores": {
 						"satisfacao": 4,
 						"fidelizacao": 0
@@ -117,7 +117,7 @@
 
 				{
 					"id": "Q4_A2",
-					"descricao": "Alternativa 2",
+					"descricao": "Alternativa 2 - Pergunta 4",
 					"impacto_indicadores": {
 						"satisfacao": 3,
 						"fidelizacao": 2
@@ -125,7 +125,7 @@
 				},
 				{
 					"id": "Q4_A3",
-					"descricao": "Alternativa 3",
+					"descricao": "Alternativa 3 - Pergunta 4",
 					"impacto_indicadores": {
 						"satisfacao": 4,
 						"fidelizacao": 1
@@ -138,10 +138,10 @@
 
 		{
 			"id": "Q5",
-			"pergunta": "Pergunta 5",
+			"pergunta": "Espaço para pergunta 5",
 			"alternativas": [{
 					"id": "Q5_A1",
-					"descricao": "Alternativa 1",
+					"descricao": "Alternativa 1 - Pergunta 5",
 					"impacto_indicadores": {
 						"satisfacao": 4,
 						"fidelizacao": 0
@@ -151,7 +151,7 @@
 
 				{
 					"id": "Q5_A2",
-					"descricao": "Alternativa 2",
+					"descricao": "Alternativa 2 - Pergunta 5",
 					"impacto_indicadores": {
 						"satisfacao": 3,
 						"fidelizacao": 2
@@ -159,7 +159,7 @@
 				},
 				{
 					"id": "Q5_A3",
-					"descricao": "Alternativa 3",
+					"descricao": "Alternativa 3 - Pergunta 5",
 					"impacto_indicadores": {
 						"satisfacao": 4,
 						"fidelizacao": 1
@@ -172,10 +172,10 @@
 
 		{
 			"id": "Q6",
-			"pergunta": "Pergunta 6",
+			"pergunta": "Espaço para pergunta 6",
 			"alternativas": [{
 					"id": "Q6_A1",
-					"descricao": "Alternativa 1",
+					"descricao": "Alternativa 1 - Pergunta 6",
 					"impacto_indicadores": {
 						"satisfacao": 4,
 						"fidelizacao": 0
@@ -185,7 +185,7 @@
 
 				{
 					"id": "Q6_A2",
-					"descricao": "Alternativa 2",
+					"descricao": "Alternativa 2 - Pergunta 6",
 					"impacto_indicadores": {
 						"satisfacao": 3,
 						"fidelizacao": 2
@@ -193,7 +193,7 @@
 				},
 				{
 					"id": "Q6_A3",
-					"descricao": "Alternativa 3",
+					"descricao": "Alternativa 3 - Pergunta 6",
 					"impacto_indicadores": {
 						"satisfacao": 4,
 						"fidelizacao": 1
@@ -206,10 +206,10 @@
 
 		{
 			"id": "Q7",
-			"pergunta": "Pergunta 7",
+			"pergunta": "Espaço para pergunta 7",
 			"alternativas": [{
 					"id": "Q7_A1",
-					"descricao": "Alternativa 1",
+					"descricao": "Alternativa 1 - Pergunta 7",
 					"impacto_indicadores": {
 						"satisfacao": 4,
 						"fidelizacao": 0
@@ -219,7 +219,7 @@
 
 				{
 					"id": "Q7_A2",
-					"descricao": "Alternativa 2",
+					"descricao": "Alternativa 2 - Pergunta 7",
 					"impacto_indicadores": {
 						"satisfacao": 3,
 						"fidelizacao": 2
@@ -227,7 +227,7 @@
 				},
 				{
 					"id": "Q7_A3",
-					"descricao": "Alternativa 3",
+					"descricao": "Alternativa 3 - Pergunta 7",
 					"impacto_indicadores": {
 						"satisfacao": 4,
 						"fidelizacao": 1
@@ -240,10 +240,10 @@
 
 		{
 			"id": "Q8",
-			"pergunta": "Pergunta 8",
+			"pergunta": "Espaço para pergunta 8",
 			"alternativas": [{
 					"id": "Q8_A1",
-					"descricao": "Alternativa 1",
+					"descricao": "Alternativa 1 - Pergunta 8",
 					"impacto_indicadores": {
 						"satisfacao": 4,
 						"fidelizacao": 0
@@ -253,7 +253,7 @@
 
 				{
 					"id": "Q8_A2",
-					"descricao": "Alternativa 2",
+					"descricao": "Alternativa 2 - Pergunta 8",
 					"impacto_indicadores": {
 						"satisfacao": 3,
 						"fidelizacao": 2
@@ -261,7 +261,7 @@
 				},
 				{
 					"id": "Q8_A3",
-					"descricao": "Alternativa 3",
+					"descricao": "Alternativa 3 - Pergunta 8",
 					"impacto_indicadores": {
 						"satisfacao": 4,
 						"fidelizacao": 1
@@ -274,10 +274,10 @@
 
 		{
 			"id": "Q9",
-			"pergunta": "Pergunta 9",
+			"pergunta": "Espaço para pergunta 9",
 			"alternativas": [{
 					"id": "Q9_A1",
-					"descricao": "Alternativa 1",
+					"descricao": "Alternativa 1 - Pergunta 9",
 					"impacto_indicadores": {
 						"satisfacao": 4,
 						"fidelizacao": 0
@@ -287,7 +287,7 @@
 
 				{
 					"id": "Q9_A2",
-					"descricao": "Alternativa 2",
+					"descricao": "Alternativa 2 - Pergunta 9",
 					"impacto_indicadores": {
 						"satisfacao": 3,
 						"fidelizacao": 2
@@ -295,7 +295,7 @@
 				},
 				{
 					"id": "Q9_A3",
-					"descricao": "Alternativa 3",
+					"descricao": "Alternativa 3 - Pergunta 9",
 					"impacto_indicadores": {
 						"satisfacao": 4,
 						"fidelizacao": 1
@@ -308,10 +308,10 @@
 
 		{
 			"id": "Q10",
-			"pergunta": "Pergunta 10",
+			"pergunta": "Espaço para pergunta 10",
 			"alternativas": [{
 					"id": "Q10_A1",
-					"descricao": "Alternativa 1",
+					"descricao": "Alternativa 1 - Pergunta 10",
 					"impacto_indicadores": {
 						"satisfacao": 4,
 						"fidelizacao": 0
@@ -321,7 +321,7 @@
 
 				{
 					"id": "Q10_A2",
-					"descricao": "Alternativa 2",
+					"descricao": "Alternativa 2 - Pergunta 10",
 					"impacto_indicadores": {
 						"satisfacao": 3,
 						"fidelizacao": 2
@@ -329,7 +329,7 @@
 				},
 				{
 					"id": "Q10_A3",
-					"descricao": "Alternativa 3",
+					"descricao": "Alternativa 3 - Pergunta 10",
 					"impacto_indicadores": {
 						"satisfacao": 4,
 						"fidelizacao": 1
@@ -342,10 +342,10 @@
 
 		{
 			"id": "Q11",
-			"pergunta": "Pergunta 11",
+			"pergunta": "Espaço para pergunta 11",
 			"alternativas": [{
 					"id": "Q11_A1",
-					"descricao": "Alternativa 1",
+					"descricao": "Alternativa 1 - Pergunta 11",
 					"impacto_indicadores": {
 						"satisfacao": 4,
 						"fidelizacao": 0
@@ -355,7 +355,7 @@
 
 				{
 					"id": "Q11_A2",
-					"descricao": "Alternativa 2",
+					"descricao": "Alternativa 2 - Pergunta 11",
 					"impacto_indicadores": {
 						"satisfacao": 3,
 						"fidelizacao": 2
@@ -363,7 +363,7 @@
 				},
 				{
 					"id": "Q11_A3",
-					"descricao": "Alternativa 3",
+					"descricao": "Alternativa 3 - Pergunta 11",
 					"impacto_indicadores": {
 						"satisfacao": 4,
 						"fidelizacao": 1
@@ -376,10 +376,10 @@
 
 		{
 			"id": "Q12",
-			"pergunta": "Pergunta 12",
+			"pergunta": "Espaço para pergunta 12",
 			"alternativas": [{
 					"id": "Q12_A1",
-					"descricao": "Alternativa 1",
+					"descricao": "Alternativa 1 - Pergunta 12",
 					"impacto_indicadores": {
 						"satisfacao": 4,
 						"fidelizacao": 0
@@ -389,7 +389,7 @@
 
 				{
 					"id": "Q12_A2",
-					"descricao": "Alternativa 2",
+					"descricao": "Alternativa 2 - Pergunta 12",
 					"impacto_indicadores": {
 						"satisfacao": 3,
 						"fidelizacao": 2
@@ -397,7 +397,7 @@
 				},
 				{
 					"id": "Q12_A3",
-					"descricao": "Alternativa 3",
+					"descricao": "Alternativa 3 - Pergunta 12",
 					"impacto_indicadores": {
 						"satisfacao": 4,
 						"fidelizacao": 1
@@ -410,10 +410,10 @@
 
 		{
 			"id": "Q13",
-			"pergunta": "Pergunta 13",
+			"pergunta": "Espaço para pergunta 13",
 			"alternativas": [{
 					"id": "Q13_A1",
-					"descricao": "Alternativa 1",
+					"descricao": "Alternativa 1 - Pergunta 13",
 					"impacto_indicadores": {
 						"satisfacao": 4,
 						"fidelizacao": 0
@@ -423,7 +423,7 @@
 
 				{
 					"id": "Q13_A2",
-					"descricao": "Alternativa 2",
+					"descricao": "Alternativa 2 - Pergunta 13",
 					"impacto_indicadores": {
 						"satisfacao": 3,
 						"fidelizacao": 2
@@ -431,7 +431,7 @@
 				},
 				{
 					"id": "Q13_A3",
-					"descricao": "Alternativa 3",
+					"descricao": "Alternativa 3 - Pergunta 13",
 					"impacto_indicadores": {
 						"satisfacao": 4,
 						"fidelizacao": 1
@@ -444,10 +444,10 @@
 
 		{
 			"id": "Q14",
-			"pergunta": "Pergunta 14",
+			"pergunta": "Espaço para pergunta 14",
 			"alternativas": [{
 					"id": "Q14_A1",
-					"descricao": "Alternativa 1",
+					"descricao": "Alternativa 1 - Pergunta 14",
 					"impacto_indicadores": {
 						"satisfacao": 4,
 						"fidelizacao": 0
@@ -457,7 +457,7 @@
 
 				{
 					"id": "Q14_A2",
-					"descricao": "Alternativa 2",
+					"descricao": "Alternativa 2 - Pergunta 14",
 					"impacto_indicadores": {
 						"satisfacao": 3,
 						"fidelizacao": 2
@@ -465,7 +465,7 @@
 				},
 				{
 					"id": "Q14_A3",
-					"descricao": "Alternativa 3",
+					"descricao": "Alternativa 3 - Pergunta 14",
 					"impacto_indicadores": {
 						"satisfacao": 4,
 						"fidelizacao": 1
@@ -478,10 +478,10 @@
 
 		{
 			"id": "Q15",
-			"pergunta": "Pergunta 15",
+			"pergunta": "Espaço para pergunta 15",
 			"alternativas": [{
 					"id": "Q15_A1",
-					"descricao": "Alternativa 1",
+					"descricao": "Alternativa 1 - Pergunta 15",
 					"impacto_indicadores": {
 						"satisfacao": 4,
 						"fidelizacao": 0
@@ -491,7 +491,7 @@
 
 				{
 					"id": "Q15_A2",
-					"descricao": "Alternativa 2",
+					"descricao": "Alternativa 2 - Pergunta 15",
 					"impacto_indicadores": {
 						"satisfacao": 3,
 						"fidelizacao": 2
@@ -499,7 +499,7 @@
 				},
 				{
 					"id": "Q15_A3",
-					"descricao": "Alternativa 3",
+					"descricao": "Alternativa 3 - Pergunta 15",
 					"impacto_indicadores": {
 						"satisfacao": 4,
 						"fidelizacao": 1
