@@ -27,7 +27,7 @@ class Indicator extends Component {
                 <div id="box-red-3" className="col-6 custom-padding-top-5 text-left">
                     <div className="row">
                         <div className="col-6">
-                            <p className="text-small text-left text-color-white">Satisfação do Cliente: </p>
+                            <p className="text-small text-left text-color-white">Satisfação do Cliente </p>
                         </div>
                         <div className="col-6">
                             <MDBProgress id="indicator-satisfaction" material value={this.props.satisfaction ? this.props.satisfaction : 0} height="20px" />
@@ -35,7 +35,7 @@ class Indicator extends Component {
                     </div>
                     <div className="row">
                         <div className="col-6">
-                            <p className="text-small text-left text-color-white">Fidelização:</p>
+                            <p className="text-small text-left text-color-white">Fidelização</p>
                         </div>
                         <div className="col-6">
                             <MDBProgress id="indicator-fidelity" material value={this.props.fidelity ? this.props.fidelity : 0} height="20px" />

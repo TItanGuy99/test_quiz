@@ -38,7 +38,7 @@ class Result extends Component {
                                     </div>
                                     <div className="row">
                                         <div className="col-6">
-                                            <p className="text-regular text-color-white text-left">Satisfação do Cliente: </p>
+                                            <p className="text-regular text-color-white text-right">Satisfação do Cliente </p>
                                         </div>
                                         <div className="col-6">
                                             <MDBProgress material value={satisfaction ? satisfaction : 0} height="20px" />
@@ -46,7 +46,7 @@ class Result extends Component {
                                     </div>
                                     <div className="row">
                                         <div className="col-6">
-                                            <p className="text-regular text-color-white text-left">Fidelização:</p>
+                                            <p className="text-regular text-color-white text-right">Fidelização</p>
                                         </div>
                                         <div className="col-6">
                                             <MDBProgress id="result-fidelity" material value={fidelity ? fidelity : 0} height="20px" />

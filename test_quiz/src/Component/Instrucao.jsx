@@ -40,7 +40,7 @@ class Instrucao extends Component {
                                         </div>
                                         <div className="row">
                                             <div className="col-6">
-                                                <p className="text-small text-left text-color-white">Fidelização:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </p>
+                                                <p className="text-small text-left text-color-white">Fidelização:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
                                             </div>
                                             <div className="col-6">
                                                 <MDBProgress id="instrucao-fidelity" material value="20" height="20px" />
@@ -52,14 +52,14 @@ class Instrucao extends Component {
                         </div>
                         <div className="col-4"></div>
                     </div>
-                    <div className="row custom-btn-position">
-                        <div className="col-3"></div>
-                        <div className="col-2">
-                            <div id="box-purple">
-                                <h4 className="text-color-white text-extra-bold button-font-instruction"><Link className="nav-link link" to="/Game">Continuar</Link></h4>
+                    <div className="row custom-btn-position custom-padding-left-7">
+                        <div className="col-2 col-sm-3 col-md-3 col-lg-3 col-xl-3"></div>
+                        <div className="col-4">
+                            <div id="box-purple-2">
+                                <h4 className="text-color-white text-extra-bold button-font-instruction"><Link className="nav-link link" to="/Game">CONTINUAR</Link></h4>
                             </div>
                         </div>
-                        <div className="col-8"></div>
+                        <div className="col-5"></div>
                     </div>
                 </div>
             </div>

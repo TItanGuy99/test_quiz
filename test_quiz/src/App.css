@@ -167,7 +167,7 @@ div[disabled] {
     width: fit-content;
     height: fit-content;
     background: #c00;
-    border-radius: 25px;
+    border-radius: 5px;
     padding-bottom: 0px;
 }
 
@@ -183,8 +183,8 @@ div[disabled] {
     border-radius: 15px;
     padding-left: 20px;
     padding-right: 15px;
-    padding-bottom: 15px;
-    padding-top: 25px;
+    padding-bottom: 5px;
+    padding-top: 20px;
 }
 
 #box-white {
@@ -228,10 +228,36 @@ div[disabled] {
     background: linear-gradient(45deg, rgb(211, 55, 55) 0%, #860468 100%);
     border-radius: 10px;
     cursor: pointer;
+    box-shadow: 0 0 0 2px #ffffff
+}
+
+#box-purple-2 {
+    width: fit-content;
+    height: fit-content;
+    background: linear-gradient(45deg, rgb(211, 55, 55) 0%, #860468 100%);
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 0 2px #ffffff
+}
+
+#box-purple-3 {
+    width: fit-content;
+    height: 35px;
+    background: linear-gradient(45deg, rgb(211, 55, 55) 0%, #860468 100%);
+    border-radius: 10px;
+    padding-top: 3%;
+    padding-left: 4%;
+    padding-right: 4%;
+    cursor: pointer;
+    box-shadow: 0 0 0 2px #ffffff
 }
 
 .custom-padding-left-5 {
     padding-left: 5%;
+}
+
+.custom-padding-left-7 {
+    padding-left: 7%;
 }
 
 .custom-padding-left-10 {
@@ -338,6 +364,10 @@ div[disabled] {
     text-align: left;
 }
 
+.text-right {
+    text-align: right;
+}
+
 .text-color-purple {
     color: purple;
 }
@@ -371,13 +401,14 @@ input[type="radio"] {
     padding: 10px;
     width: 100%;
     height: 100%;
-  }
-  
-  label {
+    cursor: pointer;
+}
+
+label {
     margin-bottom: 20px;
-  }
-  
-  input[type="radio"] + label::before {
+}
+
+input[type="radio"]+label::before {
     outline: 1px solid #aa88ff;
     color: #aa88ff;
     background: #ffffff;
@@ -386,26 +417,29 @@ input[type="radio"] {
     display: inline-block;
     opacity: 1;
     transition: all 0.5s ease;
-  }
-  input[type="radio"]:checked + label::before {
+}
+
+input[type="radio"]:checked+label::before {
     outline: 1px solid #ffffff;
     background: #aa88ff;
     color: #ffffff;
     padding: 5px;
     display: inline-block;
     opacity: 1;
-  }
-  
-  input[id*="A1"] + label::before {
+}
+
+input[id*="A1"]+label::before {
     content: "A";
-  }
-  input[id*="A2"] + label::before {
+}
+
+input[id*="A2"]+label::before {
     content: "B";
-  }
-  input[id*="A3"]  + label::before {
+}
+
+input[id*="A3"]+label::before {
     content: "C";
-  }
-  input[id*="A4"]  + label::before {
+}
+
+input[id*="A4"]+label::before {
     content: "D";
-  }
-  
+}

@@ -123,7 +123,7 @@ class Game extends Component {
                                                         value={alternative.id}
                                                         checked={this.state.current_selected === alternative.id}
                                                         onChange={this.handleChange} />
-                                                    <label className="text-left text-regular" htmlFor="sizeSmall">&nbsp; {alternative.descricao}</label>
+                                                    <label className="text-left text-extra-bold" htmlFor="sizeSmall">&nbsp; {alternative.descricao}</label>
                                                 </p>
                                             </div>
                                         )}
@@ -137,8 +137,8 @@ class Game extends Component {
                     <div className="row custom-btn-position-2">
                         <div className="col-5"></div>
                         <div className="col-2">
-                            <div id="box-purple" disabled={this.state.disabled}>
-                                <h3 onClick={this.nextMethod} className="text-color-white text-extra-bold button-font">Confirmar</h3>
+                            <div id="box-purple-3" disabled={this.state.disabled}>
+                                <h3 onClick={this.nextMethod} className="text-color-white text-extra-bold button-font">CONFIRMAR</h3>
                             </div>
                         </div>
                         <div className="col-5"></div>
