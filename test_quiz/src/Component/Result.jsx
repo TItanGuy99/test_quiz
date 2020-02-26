@@ -41,7 +41,7 @@ class Result extends Component {
                                             <p className="text-regular text-color-white text-right">Satisfação do Cliente </p>
                                         </div>
                                         <div className="col-6">
-                                            <MDBProgress material value={satisfaction ? satisfaction : 0} height="20px" />
+                                            <MDBProgress id="result-satisfaction" material value={satisfaction ? satisfaction : 0} height="20px" />
                                         </div>
                                     </div>
                                     <div className="row">

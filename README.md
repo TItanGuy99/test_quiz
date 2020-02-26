@@ -12,5 +12,4 @@ Esse projeto foi criado usando [Create React App](https://github.com/facebook/cr
 
 ## Obs:
 -   Imagem com fundo branco escrito indicadores, está faltando nos assets? (Não consegui chegar no resultado esperado só com filtros).
--   Alguns detalhes de layout como as barras ainda não estão 100%.
 -   Testado no Chrome e no Safari.

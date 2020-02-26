@@ -245,7 +245,7 @@ div[disabled] {
     height: 35px;
     background: linear-gradient(45deg, rgb(211, 55, 55) 0%, #860468 100%);
     border-radius: 10px;
-    padding-top: 3%;
+    padding-top: 2%;
     padding-left: 4%;
     padding-right: 4%;
     cursor: pointer;
@@ -266,14 +266,36 @@ div[disabled] {
 
 #indicator-fidelity .progress-bar {
     background-color: purple !important;
+    height: 80% !important;
+    margin-top: 2px !important;
+}
+
+#indicator-satisfaction .progress-bar {
+    height: 80% !important;
+    margin-top: 2px !important;
 }
 
 #instrucao-fidelity .progress-bar {
     background-color: purple !important;
+    height: 80% !important;
+    margin-top: 2px !important;
 }
+
+#instrucao-satisfaction  .progress-bar {
+    height: 80% !important;
+    margin-top: 2px !important;
+}
+
 
 #result-fidelity .progress-bar {
     background-color: purple !important;
+    height: 80% !important;
+    margin-top: 2px !important;
+}
+
+#result-satisfaction .progress-bar {
+    height: 80% !important;
+    margin-top: 2px !important;  
 }
 
 .custom-padding-right-5 {

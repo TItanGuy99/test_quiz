@@ -35,7 +35,7 @@ class Instrucao extends Component {
                                                 <p className="text-small text-left text-color-white">Satisfação do Cliente </p>
                                             </div>
                                             <div className="col-6">
-                                                <MDBProgress material value="20" height="20px" />
+                                                <MDBProgress id="instrucao-satisfaction" material value="20" height="20px" />
                                             </div>
                                         </div>
                                         <div className="row">
