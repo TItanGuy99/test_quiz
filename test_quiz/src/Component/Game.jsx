@@ -41,8 +41,8 @@ class Game extends Component {
 
     // Metodo disparado quando algum radio button é selecionado
     handleChange(event) {
-        if(this.state.form_animation) {
-            this.setState({ form_animation: false }); 
+        if (this.state.form_animation) {
+            this.setState({ form_animation: false });
         }
         this.setState({ current_selected: event.target.value });
         this.setState({ disabled: false });
@@ -103,51 +103,53 @@ class Game extends Component {
         if (show_question) {
             let show_alternatives = show_question.alternativas;
             return (
-                <div className="game-background setsize">
-                    <div className="row">
-                        <div className="col-5"></div>
-                        <div className="col-6 custom-padding-top-2">
-                            <Indicator satisfaction={this.state.satisfaction} fidelity={this.state.fidelity} />
+                <div className="set-opacity-1-animated">
+                    <div className="game-background setsize">
+                        <div className="row">
+                            <div className="col-5"></div>
+                            <div className="col-6 custom-padding-top-2">
+                                <Indicator satisfaction={this.state.satisfaction} fidelity={this.state.fidelity} />
+                            </div>
                         </div>
-                    </div>
 
-                    <div className="row">
-                        <div className="col-2"></div>
-                        <div id="box-white" className="col-6">
-                            <div className="row text-color-black text-left">
-                                <div className={ this.state.form_animation ? 'elementToFadeInAndOut' : 'elementToFadeInAndOutOff' }>
-                                    <form className="custom-padding-top-15">
+                        <div className="row">
+                            <div className="col-2"></div>
+                            <div id="box-white" className="col-6">
+                                <div className="row text-color-black text-left">
+                                    <div className={this.state.form_animation ? 'elementToFadeInAndOut' : 'elementToFadeInAndOutOff'}>
+                                        <form className="custom-padding-top-15">
 
-                                        <p className="text-left text-regular"> {show_question.pergunta} </p>
+                                            <p className="text-left text-regular"> {show_question.pergunta} </p>
 
-                                        {show_alternatives.map((alternative) =>
-                                            <div>
-                                                <p>
-                                                    <input type="radio"
-                                                        name="radio-group"
-                                                        id={alternative.id}
-                                                        value={alternative.id}
-                                                        checked={this.state.current_selected === alternative.id}
-                                                        onChange={this.handleChange} />
-                                                    <label className="text-left text-extra-bold" htmlFor="sizeSmall">&nbsp; {alternative.descricao}</label>
-                                                </p>
-                                            </div>
-                                        )}
-                                    </form>
+                                            {show_alternatives.map((alternative) =>
+                                                <div>
+                                                    <p>
+                                                        <input type="radio"
+                                                            name="radio-group"
+                                                            id={alternative.id}
+                                                            value={alternative.id}
+                                                            checked={this.state.current_selected === alternative.id}
+                                                            onChange={this.handleChange} />
+                                                        <label className="text-left text-extra-bold" htmlFor="sizeSmall">&nbsp; {alternative.descricao}</label>
+                                                    </p>
+                                                </div>
+                                            )}
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
+                            <div className="col-4"></div>
                         </div>
-                        <div className="col-4"></div>
-                    </div>
 
-                    <div className="row custom-btn-position-2">
-                        <div className="col-5"></div>
-                        <div className="col-2">
-                            <div id="box-purple-3" disabled={this.state.disabled}>
-                                <h3 onClick={this.nextMethod} className="text-color-white text-extra-bold button-font">CONFIRMAR</h3>
+                        <div className="row custom-btn-position-2">
+                            <div className="col-5"></div>
+                            <div className="col-2">
+                                <div id="box-purple-3" disabled={this.state.disabled}>
+                                    <h3 onClick={this.nextMethod} className="text-color-white text-extra-bold button-font">CONFIRMAR</h3>
+                                </div>
                             </div>
+                            <div className="col-5"></div>
                         </div>
-                        <div className="col-5"></div>
                     </div>
                 </div>
             );

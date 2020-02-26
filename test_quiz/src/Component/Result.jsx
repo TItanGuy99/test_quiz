@@ -21,7 +21,7 @@ class Result extends Component {
         let fidelity = this.state.indicators.substring(this.state.indicators.indexOf('?') + 1, this.state.indicators.length);
 
         return (
-            <div>
+            <div className="set-opacity-1-animated">
                 <div className="result-background setsize">
                     <div id="overlay">
                         <div className="row custom-padding-top-10">
