@@ -3,7 +3,7 @@ Esse projeto foi criado usando [Create React App](https://github.com/facebook/cr
 ## Como rodar o projeto
 
 -   Clone este repositório
--   Dentro da pasta do projeto rode os seguintes comandos:
+-   Dentro da pasta test_quiz rode os seguintes comandos:
 
 ### `npm i`
 ### `npm run start`
